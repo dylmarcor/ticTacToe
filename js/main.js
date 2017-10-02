@@ -41,14 +41,16 @@ function handleClick(evt) {
     if (content === '' && playerTurn === 0) {
         evt.target.textContent = "X";
         playerTurn = 1;
-        x++;
     } else if (content !== "X") {
         evt.target.textContent = '0';
         playerTurn = 0;
-        o++;
     }
     console.log("Clicky guy");
 };
+
+function checkWinner() {
+    
+}
 
 function resetBoard() {
     for (var i = 0; i < board.length; i++) {

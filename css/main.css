@@ -1,16 +1,24 @@
 body {
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    background: linear-gradient(to right, #8F7500 , #8F5900);
 }
 
 h1 {
     text-align: center;
     margin: 40px 0;
+    color: #FFFEEE;
+    text-shadow: 2px 2px black;
+    animation-name: title;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 h2 {
     text-align: center;
     margin: 20px 0;
+    color: whitesmoke;
+    text-shadow: 1px 1px black;
 }
 
 button {
@@ -22,7 +30,8 @@ table {
     cursor: pointer;
     font-size: 60px;
     border: 2px solid black;
-    background-color: green;
+    background-color:#00CB00;
+    box-shadow: 4px 4px 2px black;
 }
 
 td {
@@ -38,7 +47,15 @@ button {
 }
 
 #x-score {
-    display: flex;
-    justify-content: center;
+    color: #FF3E00;
 }
 
+#o-score {
+    color: #FF3E00;
+}
+
+@keyframes title {
+    0% {color: #FFFFFF;}
+    50% {color: #F0E76E;}
+    100% {color: #FFFFFF;}
+}
